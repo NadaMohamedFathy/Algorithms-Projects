@@ -22,13 +22,13 @@ int calculate(int n,int c, int a[],int b[])
         minrem[i] = min(remain[i], remain[i] + minrem[i + 1]);
     }
     //Check the capcity of the remaing fuel for each city, upon this he can determine if he can visit the city or not
-    for (int i = 0; i < n; i++) 
+    /*for (int i = 0; i < n; i++) 
 	{
         if ((-minrem[i] + a[i]) > c) 
 		{
             return 0;
         }
-    }
+    }*/
     int numOfCities = 0;
     //Upon the remaing fuel, it decides the number of cities he can visit
     for (int i = 0; i < n; i++) 
